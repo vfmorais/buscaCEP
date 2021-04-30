@@ -45,7 +45,7 @@ export default class App extends React.Component {
         // "siafi": "6601"
       //}
 
-      <View>
+      <View style={styles.container}>
         <Text> CEP: { this.state.endereco.cep} </Text>
         <Text> LOGRADOURO: { this.state.endereco.logradouro} </Text>
         <Text> COMPLEMENTO: { this.state.endereco.complemento} </Text>
@@ -59,6 +59,16 @@ export default class App extends React.Component {
       </View>
 
 );  
-}
+}}
 
-}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#696969',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+
+
+});
